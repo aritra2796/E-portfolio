@@ -15,13 +15,15 @@
     <script src="boostrap/dist/js/bootstrap.min.js"></script>
     
     <!--navbar starts here-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-        <a href="/"><img height="50px" width="50px" src="assets/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>                     
+          </button>
+          <a class="navbar-brand" href="/assets/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <% if(title=='E-portfolio'){%>
                 <li class="nav-item active">
