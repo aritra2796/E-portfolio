@@ -1,0 +1,29 @@
+/*this is a design template for body
+    Author: Aritra Roy
+     Student ID: 301176508*/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('./back.jpg');
+  background-repeat: no-repeat;
+  background-size: 1700px 1200px;
+}
+/* Copy Right Footer */
+.footer-copyright { background: gray; padding: 5px 0;  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {  list-style: none; margin: 0;  padding: 0;}
+.footer-copyright nav ul li { border-left: 1px solid; color: white; display: inline-block;  line-height: 12px;  margin: 0;  padding: 0 8px;}
+.footer-copyright nav ul li a{  color: white;}
+.footer-copyright nav ul li:first-child { border: medium none;  padding-left: 0;}
+.footer-copyright p { color: white; margin: 2px 0 0;}
+/* Main Footer */
+footer .main-footer{  padding: 20px 0;  background: white;  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;} 
+footer ul{  padding-left: 0;  list-style: none;}
+
