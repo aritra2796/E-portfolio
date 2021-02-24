@@ -1,4 +1,4 @@
-/*This page is used to set view engines and use express methods
+/*This page is used to set view engines, use third party packages and express methods
   Author: Aritra Roy
      Student ID: 301176508*/ 
 let createError = require('http-errors');
