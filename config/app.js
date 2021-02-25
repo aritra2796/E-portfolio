@@ -12,6 +12,15 @@ let usersRouter = require('../routes/users');
 
 let app = express();
 
+// database
+let mongoose = require('mongoose');
+let db = require('./db');
+
+//point mongoose to db URI
+mongoose.connect(db.URI);
+let mongodb = mongoose.connection;
+mongodb.on('error', console.error.bind(console, 'connection error'));
+
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
