@@ -13,14 +13,14 @@ let usersRouter = require('../routes/users');
 let app = express();
 
 // database
-let mongoose = require('mongoose');
+/*let mongoose = require('mongoose');
 let db = require('./db');
 
 //point mongoose to db URI
 mongoose.connect(db.URI);
 let mongodb = mongoose.connection;
 mongodb.on('error', console.error.bind(console, 'connection error'));
-/*mongodb.once('open', => {
+mongodb.once('open', => {
   console.log('connected to database');
 })*/
 // view engine setup
