@@ -1,21 +1,48 @@
-var express = require('express');
-var router = express.Router();
-
-let indexController = require('../controllers/index');
-
+/* This page adds routing for all pages in website
+Author: Aritra Roy
+     Student ID: 301176508
+*/
+let express = require('express');
+let router = express.Router();
+/*database*/
+let mongoose = require('mongoose');
+let passport= require('passport');
+/*create user model instance*/
+let userModel = require('users');
+let User = userModel.User;
 /* GET home page. */
-router.get('/', indexController.displayHomePage);
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'E-portfolio' });
+});
+/* Get about page*/
+router.get('/about', function (req, res, next) {
+  res.render('about', { title: 'About'});
+});
+/* Get projects page*/
+router.get('/projects', function (req, res, next) {
+  res.render('projects', { title: 'Projects'});
+});
+/* Get services page*/
+router.get('/services', function (req, res, next) {
+  res.render('services', { title: 'Services'});
+});
+/* Get contact page*/
+router.get('/contact', function (req, res, next) {
+  res.render('contact', { title: 'Contact'});
+});
+/* Get registered page*/
+router.post('/contact', indexcontroller.processAddpage() , function (req, res, next) {
+  res.render('contact', { title: 'Contact'});
+});
+/* Get login page*/
+router.get('/login', function (req, res, next) {
+  res.render('login', { title: 'Login'});
+});
+/* Get login process page*/
+router.post('/login', indexcontroller.processAddpage() , function (req, res, next) {
+  res.render('login', { title: 'Login'});
+});
 
-/* GET home page. */
-router.get('/home', indexController.displayHomePage);
-
-/* GET about page. */
-router.get('/about',  indexController.displayAboutPage);
-
-/* GET products page. */
-router.get('/projects',  indexController.displayProjectPage);
-
-/* GET services page. */
-router.get('/services',  indexController.displayServicesPage);
-
+/*Get perform logout*/
+router.get('/logout', userController.performLogout);
 module.exports = router;
