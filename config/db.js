@@ -1,3 +1,4 @@
 module.exports = {
-    "URI": "mongodb://"
+    "URI": "mongodb://",
+    "secret": 'SomeSecret'
 }
