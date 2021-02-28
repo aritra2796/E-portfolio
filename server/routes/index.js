@@ -4,10 +4,10 @@ var router = express.Router();
 let indexController = require('../controllers/index');
 
 /* GET home page. */
-router.get('/index', indexController.displayHomePage);
+router.get('/', indexController.displayHomePage);
 
 /* GET home page. */
-router.get('/index', indexController.displayHomePage);
+router.get('/home', indexController.displayHomePage);
 
 /* GET about page. */
 router.get('/about',  indexController.displayAboutPage);
