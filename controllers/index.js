@@ -10,7 +10,7 @@ Feedback.message = null;
 
 /* GET home page. */
 module.exports.displayHomePage = (req, res, next) => {
-  res.render('/index', {
+  res.render('views/index', {
     title: 'E-portfolio', 
     contact:Feedback,
     displayName: req.user ? req.user.displayName : ''
