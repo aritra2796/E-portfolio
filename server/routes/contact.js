@@ -9,7 +9,7 @@ let Feedback = require('../models/feedback')
 
 /* GET contact us page. */
 module.exports.displayContactPage = (req, res, next) => {
-  res.render('/contact', { title: 'Contact',
+  res.render('pages/contact', { title: 'Contact',
   displayName: req.user ? req.user.displayName : '' });
 };
 
@@ -34,7 +34,7 @@ module.exports.displayContactList = (req, res, next) => {
                 res.redirect('/');
            }
            else{
-            res.render('/contact/list', 
+            res.render('pages/contact/list', 
             {
                 title: 'Contact List', 
                 contactList: contactList, 
