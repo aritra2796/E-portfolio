@@ -8,7 +8,8 @@ router.get('/', indexController.displayHomePage);
 
 /* GET home page. */
 router.get('/home', indexController.displayHomePage);
-
+/* GET home page. */
+router.get('/home', indexController.displayProfileHomePage);
 /* GET about page. */
 router.get('/about',  indexController.displayAboutPage);
 
