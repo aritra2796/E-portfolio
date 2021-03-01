@@ -96,7 +96,6 @@ passport.use(strategy);
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
 app.use('/contact', contactRouter);
-app.use('/book', booksRouter);
 
 // catch 404 and forward to error handler
 
